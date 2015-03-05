@@ -1,0 +1,69 @@
+body {
+    background-color: #2a2a2a;
+    color: #808080;
+    font-family: 'Vollkorn', serif;
+    text-align: center;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.notes {
+    padding-top: 40vh;
+    height: 10vh;
+
+}
+
+.volume {
+    width: 100%;
+    background: blue;
+}
+
+.mute {
+    position: absolute;
+    bottom: 1em;
+    opacity: .6;
+}
+
+.mute:hover {
+    opacity: 1;
+}
+
+#mute-button {
+    height: 3em;
+}
+
+.dylan-lol {
+    display: none;
+}
+
+.dylan-lol.visible {
+    display: block;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 20em;
+    height: 8px;
+    background: #222;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #777;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
